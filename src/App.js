@@ -48,7 +48,7 @@ export default function App() {
       ></input>
       <div className="cardWrapper">
         {currentEmployeeList.map((employee) => {
-          return <EmployeeCard employeeDetails={employee} />;
+          return <EmployeeCard key={employee.id} employeeDetails={employee} />;
         })}
       </div>
     </div>
